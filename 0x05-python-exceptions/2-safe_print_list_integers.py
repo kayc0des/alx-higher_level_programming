@@ -6,7 +6,6 @@ def safe_print_list_integers(my_list=[], x=0):
             print('{:d}'.format(my_list[i]), end="")
             point_in += 1
         except (TypeError, ValueError):
-            continue
-
+            pass
     print()
     return point_in
